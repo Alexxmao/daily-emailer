@@ -77,7 +77,7 @@ export default function Home(){
   }, [changeQuote])
   
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 86400000)
+    const intervalID = setInterval(changeQuote, 86400000)
     return () => clearInterval(intervalID)
   }, [sendEmail])
 
