@@ -72,12 +72,12 @@ export default function Home(){
   }
   
   useEffect(() => {
-    const intervalID = setInterval(changeQuote, 86400000)
+    const intervalID = setInterval(changeQuote, 1800000)
     return () => clearInterval(intervalID)
   }, [changeQuote])
   
   useEffect(() => {
-    const intervalID = setInterval(changeQuote, 86400000)
+    const intervalID = setInterval(changeQuote, 1800000)
     return () => clearInterval(intervalID)
   }, [sendEmail])
 
